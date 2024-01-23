@@ -1,0 +1,135 @@
+@use "./base";
+@use "./layouts";
+@use "./components";
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.image__container img {
+  max-width: 500px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (width <900px) {
+  .service__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width < 780px) {
+
+  .nav__container .nav__links {
+    display: none;
+  }
+
+  header {
+    background: linear-gradient(to bottom,
+        #0f1035 0%,
+        #0f1035 45%,
+        #365486 45%,
+        #365486 100%);
+  }
+
+
+  .header__section {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (width <=650px) {
+  header {
+    background: linear-gradient(to bottom,
+        #0f1035 0%,
+        #0f1035 50%,
+        #365486 50%,
+        #365486 100%);
+  }
+}
+
+@media (width <=600px) {
+  header {
+    background: linear-gradient(to bottom,
+        #0f1035 0%,
+        #0f1035 50%,
+        #365486 50%,
+        #365486 100%);
+  }
+
+  .service__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (width <=530px) {
+  header {
+    background: linear-gradient(to bottom,
+        #0f1035 0%,
+        #0f1035 52%,
+        #365486 52%,
+        #365486 100%);
+  }
+}
+
+
+@media (width <=520px) {
+  header {
+    background: linear-gradient(to bottom,
+        #0f1035 0%,
+        #0f1035 55%,
+        #365486 55%,
+        #365486 100%);
+  }
+}
+
+
+@media (width <=500px) {
+  header {
+    background: linear-gradient(to bottom,
+        #0f1035 0%,
+        #0f1035 60%,
+        #365486 60%,
+        #365486 100%);
+  }
+}
+
+@media (width <=398px) {
+  header {
+    background: linear-gradient(to bottom,
+        #0f1035 0%,
+        #0f1035 65%,
+        #365486 65%,
+        #365486 100%);
+  }
+}
+
+@media (width <=344px) {
+  header {
+    background: linear-gradient(to bottom,
+        #0f1035 0%,
+        #0f1035 70%,
+        #365486 70%,
+        #365486 100%);
+  }
+}

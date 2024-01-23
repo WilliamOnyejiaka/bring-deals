@@ -1,0 +1,43 @@
+@use './../base';
+
+
+footer {
+    background-color: base.$primary-color-dark;
+
+}
+
+.footer__content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 5rem;
+
+    & .footer__txt {
+        & h1 {
+            margin-bottom: 0.5rem;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+
+        & p {
+            color: base.$text-light-header;
+
+        }
+    }
+
+    & .footer__btn a {
+        display: block;
+    }
+}
+
+.footer__bar {
+    background-color: base.$white;
+    text-align: center;
+
+    &__content {
+        padding: 1rem;
+        color: base.$text-light;
+    }
+}
